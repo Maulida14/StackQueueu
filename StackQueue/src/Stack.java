@@ -55,7 +55,7 @@ public class Stack <T> {
         }
 
         if (node1 == null || node2 == null) { // kalau salah satu bernilai null
-            System.out.println("Index melebihi panjang stack");
+            System.out.println("Index melebihi panjang stack, terdapat node yang kosong");
             return;
         }
         T temp = (T) node1.getValue();
