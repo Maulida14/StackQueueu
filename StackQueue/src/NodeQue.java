@@ -1,13 +1,23 @@
-//public class NodeQue extends Node {
-    //private Node prev;
-    //public NodeQue(int value, Node prev, Node next) {
-        //super(value, next);
-        //this.prev = prev;
-    //}
-//}
+public class NodeQue<T> extends Node<T> {
+    protected NodeQue<T> prev;
 
-//enqueue > tambah
-//dequeue > hapus
+    public NodeQue(T value) {
+        super(value);
+        this.prev = null;
+    }
+
+    public NodeQue<T> getPrev() {
+        return prev;
+    }
+
+    public void setPrev(NodeQue<T> prev) {
+        this.prev = prev;
+    }
+}
+
+
+//enqueue > tambah > di java bisa pakai offer()
+//dequeue > hapus > di java bisa pakai poll()
 //hasdequeue > ngecek kondisi que (bool)
 //double linkedlist (ada prev)
 //peek
