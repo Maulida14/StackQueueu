@@ -7,6 +7,14 @@ public class Queue<T> {
         this.tail = null;    
     }
 
+    public T peek() {
+        if (front == null) {
+            throw new NoSuchElementException("queue is empty");
+        }
+        return front.getValue();
+    }
+    
+
     public void swap(int index1, int index2) {
         if (index1 < 0 || index2 < 0) {
             System.out.println("Index tidak boleh negatif");
